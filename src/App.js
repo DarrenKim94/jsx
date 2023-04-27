@@ -1,3 +1,4 @@
+import 'bulma/css/bulma.css'
 import ProfileCard from "./ProfileCard";
 import AlexaImage from './images/alexa.png';
 import CortanaImage from './images/cortana.png';
@@ -8,9 +9,21 @@ function App() {
         <div>
             <div>Personal Digital Assistants</div>
 
-            <ProfileCard title="Alexa" username="@alexa99"/>
-            <ProfileCard title="Cortana" username="@cortana32"/>
-            <ProfileCard title="Siri" username="@siri01"/>
+            <div className="container">
+              <section className="section">
+                <div className="columns">
+                    <div className="column is-4">
+                        <ProfileCard title="Alexa" username="@alexa99" image={AlexaImage} />
+                    </div>
+                    <div className="column is-4">
+                        <ProfileCard title="Cortana" username="@cortana32"image={CortanaImage} />
+                    </div>
+                    <div className="column is-4">
+                        <ProfileCard title="Siri" username="@siri01" image={SiriImage} />
+                    </div>
+                </div>
+              </section>
+            </div>  
         </div>
     );
 }
