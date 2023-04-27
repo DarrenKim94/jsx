@@ -7,19 +7,29 @@ import SiriImage from './images/siri.png'
 function App() {
     return(
         <div>
-            <div>Personal Digital Assistants</div>
+            <section className="hero is-primary">
+                <div className="hero-body">
+                    <p className="title">Personal Digital Assistants</p>
+                </div>
+            </section>
 
             <div className="container">
               <section className="section">
                 <div className="columns">
                     <div className="column is-4">
-                        <ProfileCard title="Alexa" username="@alexa99" image={AlexaImage} />
+                        <ProfileCard title="Alexa" username="@alexa99" image={AlexaImage}
+                        description="Created by Amazon for purchases." 
+                        />
                     </div>
                     <div className="column is-4">
-                        <ProfileCard title="Cortana" username="@cortana32"image={CortanaImage} />
+                        <ProfileCard title="Cortana" username="@cortana32"image={CortanaImage}
+                        description="Created by Microsoft for who knows?" 
+                        />
                     </div>
                     <div className="column is-4">
-                        <ProfileCard title="Siri" username="@siri01" image={SiriImage} />
+                        <ProfileCard title="Siri" username="@siri01" image={SiriImage}
+                        description="Created by apple to annoy you." 
+                        />
                     </div>
                 </div>
               </section>
